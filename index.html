@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="./style/home.css">
 </head>
  
 <body>
@@ -19,8 +18,7 @@
                 <div>
                     <input type="checkbox" id="designmode-toggle"/>
                     <label onclick="toggleModeFunction()" for="designmode-toggle"></label>
-                    <label></label>
-    
+                    <p id="mode-label">Design</p>
                 </div>
             </div>
             
@@ -51,8 +49,16 @@
     
  <script>
     function toggleModeFunction() {
-        let element = document.body;
-        element.classList.toggle("develop");
+        let bodyElement = document.body;
+        bodyElement.classList.toggle("develop");
+
+        let paragraphElement = document.getElementById("mode-label")
+        if ( paragraphElement.textContent === "Design" ) {
+            paragraphElement.textContent = "Develop";
+            } else if ( paragraphElement.textContent === "Develop" ) {
+                paragraphElement.textContent = "Design";
+  
+}
     }
 </script>
 </body>

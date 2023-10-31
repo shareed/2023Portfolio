@@ -3,11 +3,6 @@ body {
 }
 
 
-.develop{
-    background: radial-gradient(circle at 100%, rgb(50, 50, 50) 3.6%, rgb(0, 0, 0) 90.4%);
-    color: #e6e6e6;
-}
-
 /* Creates the container for button */
 label {
     width: 6rem;
@@ -60,4 +55,17 @@ input:checked + label:after {
 /* GUI effect, changes width of button when clicked */
 label:active:after {
     width: 3rem;
+}
+
+
+/* Develop Mode */
+.develop{
+    background: radial-gradient(circle at 100%, rgb(50, 50, 50) 3.6%, rgb(0, 0, 0) 90.4%);
+    color: #e6e6e6;
+}
+
+#mode-label{
+    margin-top: .5rem;
+    padding-left: .5rem;
+    font-size: 1.5rem;
 }
