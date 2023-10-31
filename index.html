@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./style/home.css">
+</head>
+ 
+<body>
+   <div class="container">
+
+        <section class="left-sidebar">
+            <div class="left-sidebar-header">
+                <img class="left-sidebar-headshot" src="./img/me.jpg" >
+                <h1 class="left-sidebar-name">Shannon Reed</h1>
+                <h2 class="left-sidebar-dev-special">Full Stack Web Developer</h2>
+                <div>
+                    <input type="checkbox" id="designmode-toggle"/>
+                    <label onclick="toggleModeFunction()" for="designmode-toggle"></label>
+                    <label></label>
+    
+                </div>
+            </div>
+            
+        </section>
+
+
+        <section class="main-section">
+            <h2>Hey, I'm Shannon.</h2>
+            <p>Full Stack Web Developer learning, building and teaching <br/>from San Diego, Califonia. I turn ideas into applications and websites</p>
+            <p>Come on in and take a look around, dont forget to connect with me while you are here!!!</p>
+        </section>
+        
+   </div>
+
+
+   <!-- <footer id="footer"></footer>
+            <div>
+                <input type="checkbox" id="designmode-toggle"/>
+                <label onclick="toggleModeFunction()" for="designmode-toggle"></label>
+
+            </div>
+ -->
+
+
+
+
+
+    
+ <script>
+    function toggleModeFunction() {
+        let element = document.body;
+        element.classList.toggle("develop");
+    }
+</script>
+</body>
+</html>

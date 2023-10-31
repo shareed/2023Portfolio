@@ -1,0 +1,55 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: inline-flex;
+  
+    font-size: 2rem;
+    color: aqua;
+
+}
+
+.left-sidebar {
+    width: 15%;
+border: 5px solid black;
+}
+.left-sidebar-header {
+    margin-bottom: 5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FECD1A;
+    border-bottom: .3rem outset #FECD1A;
+}
+.left-sidebar-headshot {
+    width: 10rem;
+   height: 10rem;
+   border-radius: 5rem;
+   -webkit-border-radius: 5rem;
+   -moz-border-radius: 5rem;
+}
+
+.left-sidebar-name {
+    border-bottom: .2rem dotted #FECD1A;
+   font-size: 2.5rem;
+   text-align: center;
+   padding-bottom: .5rem;
+}
+
+.left-sidebar-dev-special {
+    font-size: 1.4rem;
+    text-align: center;
+    padding-top: .5rem;
+}
+  
+.main-section{
+    width: 85%;
+border: 5px solid black;
+}
+  
+  
+  
+  
+  
+
