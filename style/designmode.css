@@ -1,5 +1,5 @@
 body {
-    background: rgb(225, 234, 238);
+    background-color: #d3dcd2;
 }
 
 /* Container for button */
@@ -11,9 +11,11 @@ body {
     background: rgb(121, 45, 129);
 }
 
-
-
-
+/* Right side */
+.main-section-right-banner {
+    background: radial-gradient(circle at 100%, rgb(121, 45, 129) 3.6%, rgb(36, 31, 98) 90.4%);
+    color: #d3dcd2;
+}
 
 /* Left Side */
 .left-sidebar {
@@ -30,7 +32,4 @@ body {
 }
 
 
-.main-section-right-banner {
-    background: radial-gradient(circle at 100%, rgb(121, 45, 129) 3.6%, rgb(36, 31, 98) 90.4%);
-    color: rgb(225, 234, 238);
-} 
+ 

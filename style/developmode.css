@@ -1,12 +1,11 @@
 .develop-body{
-    background: rgb(50, 50, 50);
+    background-color: #292929; 
     color: #e6e6e6;
 }
 
 /* Changes box shadow */
 #mode-toggle:checked + #mode-button {
     box-shadow: inset 0rem .1rem .5rem rgb(36, 31, 98), inset 0rem -.1rem .5rem rgb(255, 255, 255, 0.4);
-
 }
 
 /* Changes button color*/
@@ -19,6 +18,7 @@
 
 /* Right side */
 .develop-banner{
+    color: #292929;
     background: radial-gradient(circle at 100%, rgb(36, 31, 98) 3.6%, rgb(121, 45, 129)  90.4%);
 }
 

@@ -6,7 +6,6 @@
     height: 3rem;
     top: .5%;
     right: 1.2%;
-    /* background-color: red; */
     border-radius: 10px;
     animation: move 40s linear infinite;
 }
@@ -19,7 +18,6 @@
     height: 3rem;
     top: .5%;
     right: 1.2%;
-    /* background-color: red; */
     border-radius: 10px;
     animation: move 40s 10s infinite;
     /* animation-delay: .2s; */
