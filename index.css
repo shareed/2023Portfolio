@@ -1,4 +1,8 @@
 @import url("./style/reset.css");
 @import url("./style/motion.css");
 @import url("./style/mode.css");
-@import url("./style/home.css");
+@import url("./style/container.css");
+@import url("./style/leftsidebar.css");
+@import url("./style/rightsidehome.css");
+@import url("./style/designmode.css");
+@import url("./style/developmode.css");

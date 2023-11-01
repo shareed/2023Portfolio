@@ -1,0 +1,38 @@
+
+.left-sidebar {
+    width: 15%;
+    height: 100%;
+    border: 5px solid black;
+}
+
+.left-sidebar-header {
+    margin-bottom: 5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-bottom: .3rem solid black;
+}
+
+.left-sidebar-name {
+    border-bottom: .2rem dotted black;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: .5rem;
+}
+
+.left-sidebar-headshot {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+}
+
+.left-sidebar-dev-special {
+    font-size: 1.4rem;
+    text-align: center;
+    padding-top: .5rem;
+}

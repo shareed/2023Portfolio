@@ -20,9 +20,12 @@
                 <h1 id="sidebar-name" class="left-sidebar-name">Shannon Reed</h1>
                 <h2 class="left-sidebar-dev-special">Full Stack Web Developer</h2>
                 <div>
-                    <input type="checkbox" id="designmode-toggle"/>
-                    <label onclick="toggleModeFunction()" for="designmode-toggle"></label>
-                    <p id="mode-label">Design</p>
+                    <input type="checkbox" id="mode-toggle"/>
+                    <label id="mode-button" onclick="toggleModeFunction()" for="mode-toggle">
+                        <img src="./img/design.svg" class="design-mode-image">
+                        <img src="./img/develop.svg" class="develop-mode-image">
+                    </label>
+                    <p id="mode-name">Design</p>
                 </div>
             </div>
             
@@ -62,34 +65,7 @@
 
 
     
- <script>
-    function toggleModeFunction() {
-        let bodyElement = document.body;
-        bodyElement.classList.toggle("develop-body");
-
-        let bannerElement = document.getElementById("banner");
-        // bannerElement.classList.remove("main-section-right-banner")
-        bannerElement.classList.toggle("develop-banner");
-        
-        let sidebarElement = document.getElementById("sidebar");
-        sidebarElement.classList.toggle("develop-left-sidebar");
-
-        let sidebarHeaderElement = document.getElementById("sidebar-header");
-        sidebarHeaderElement.classList.toggle("develop-left-sidebar-header");
-
-        let sidebarNameElement = document.getElementById("sidebar-name");
-        sidebarNameElement.classList.toggle("develop-left-sidebar-name");
-
-
-        let paragraphElement = document.getElementById("mode-label");
-        if ( paragraphElement.textContent === "Design" ) {
-            paragraphElement.textContent = "Develop";
-            } else if ( paragraphElement.textContent === "Develop" ) {
-                paragraphElement.textContent = "Design";
-  
-}
-    }
-</script>
+ <script src="./jsfiles/mode.js"></script>
 
 <!-- Bootstrap & jQuery JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

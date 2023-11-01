@@ -1,0 +1,36 @@
+body {
+    background: rgb(225, 234, 238);
+}
+
+/* Container for button */
+#mode-button {
+    box-shadow: inset 0rem .1rem .5rem rgb(121, 45, 129), inset 0rem -.1rem .5rem rgb(255, 255, 255, 0.4);
+}
+
+#mode-button:after {
+    background: rgb(121, 45, 129);
+}
+
+
+
+
+
+/* Left Side */
+.left-sidebar {
+    border: 5px solid rgb(36, 31, 98);
+}
+
+.left-sidebar-header {
+    color: rgb(36, 31, 98);
+    border-bottom: .3rem solid rgb(36, 31, 98);
+}
+
+.left-sidebar-name {
+    border-bottom: .2rem dotted rgb(36, 31, 98);
+}
+
+
+.main-section-right-banner {
+    background: radial-gradient(circle at 100%, rgb(121, 45, 129) 3.6%, rgb(36, 31, 98) 90.4%);
+    color: rgb(225, 234, 238);
+} 

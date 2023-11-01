@@ -1,68 +1,78 @@
-body {
-   background: rgb(225, 234, 238);
-}
-
-/* Creates the container for button */
-label {
-    width: 6rem;
-    height: 2.8rem;
-    position: relative;
-    display: block;
-    background-color: #ebebeb;
-    border-radius: 20rem;
-    box-shadow: inset 0rem .1rem .5rem rgb(121, 45, 129), inset 0rem -.1rem .5rem rgb(255, 255, 255, 0.4);
-    cursor: pointer;
-    transition: 0.3s;/* Creates sliding animation */
-}
-
-/* Creates the toggle button inside the container */
-label:after {
-    content: "";
-    width: 2.5rem;
-    height: 2.5rem;
-    position: absolute;
-    top: .2rem;
-    left: .1rem;
-    background: rgb(121, 45, 129);
-    border-radius: 18rem;
-    transition: 0.3s; /* Creates sliding animation */
-}
-
-/* Hides Checkbox*/
-input{
+/* Hide Checkbox*/
+#mode-toggle{
     width: 0;
     height: 0;
     visibility: hidden;
 }
 
-/* Creates clicked state for label*/
-input:checked + label {
-    box-shadow: inset 0rem .1rem .5rem rgb(36, 31, 98), inset 0rem -.1rem .5rem rgb(255, 255, 255, 0.4);
-
+/* Create container for button */
+#mode-button {
+    width: 6rem;
+    height: 2.8rem;
+    position: relative;
+    display: block;
+    background-color: #ebebeb;
+    box-shadow: inset 0rem .1rem .5rem black, inset 0rem -.1rem .5rem rgb(255, 255, 255, 0.4);
+    border-radius: 20rem;
+    cursor: pointer;
+    transition: 0.3s;/* Creates sliding animation */
 }
 
-/* Creates clicked state position and button color, changes the position of the pseudo element by
-using left and translate x*/
-input:checked + label:after {
-    left:5.5rem;
+/* Create mode toggle button inside the container */
+#mode-button:after {
+    content: "";
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    background-color: black;
+    top: .2rem;
+    left: .3rem;
+    border-radius: 18rem;
+    transition: 0.3s; /* Creates sliding animation */
+}
+
+
+/* Position the  svgs/images for mode button */
+#mode-button img {
+    position: absolute;
+    width: 1.5rem;
+    top: .8rem;
+    z-index: 100; /* moves images to front */
+   filter: invert(1); /*changes the color of the svg to white */
+}
+
+/* change position and color of design mode svg/image */
+#mode-button .design-mode-image {
+    left: .8rem;
+    filter: invert(14%) sepia(73%) saturate(1196%) hue-rotate(221deg) brightness(92%) contrast(106%);
+}
+
+/* change position and color of develop mode svg/image */
+#mode-button .develop-mode-image {
+    left: 3.5rem;
+    filter: invert(23%) sepia(52%) saturate(1380%) hue-rotate(259deg) brightness(95%) contrast(98%);
+}
+
+/* make the button slide from one side to the other when clicked */
+#mode-toggle:checked + #mode-button:after {
+    left: 5.5rem;
     transform: translate(-100%);
-    background: rgb(36, 31, 98);
+    background: yellow;
 }
 
-/* GUI effect, changes width of button when clicked */
-label:active:after {
-    width: 3rem;
-}
+/* GUI effect, briefly change width of button when clicked*/
+#mode-button:active:after {
+    width: 6rem;
+} 
 
-
-/* Develop Mode */
-.develop-body{
-    background: rgb(50, 50, 50);
-    color: #e6e6e6;
-}
-
-#mode-label{
+/* position mode name */
+#mode-name{
     margin-top: .5rem;
     padding-left: .5rem;
     font-size: 1.5rem;
 }
+
+
+
+
+

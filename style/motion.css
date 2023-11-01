@@ -1,32 +1,3 @@
-/* #road {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    background-image: url('road.jpg');
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-} */
-.main-section-right-banner {
-    width: 100%;
-    height: 50px;
-    background: radial-gradient(circle at 100%, rgb(121, 45, 129) 3.6%, rgb(36, 31, 98) 90.4%);
-    float: right;
-    color: rgb(225, 234, 238);
-    font-size: 4rem;
-} 
-
-.develop-banner{
-    background: radial-gradient(circle at 100%, rgb(36, 31, 98) 3.6%, rgb(121, 45, 129)  90.4%);
-
-}
-
-
-
-
 #think {
     position: absolute;
     text-align: center;
@@ -55,7 +26,13 @@
     animation: fadeIn 10s;
 }
 
+#create {
 
+}
+
+#repeat {
+
+}
  
 @keyframes move {
     0% {

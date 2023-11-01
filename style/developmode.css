@@ -1,0 +1,41 @@
+.develop-body{
+    background: rgb(50, 50, 50);
+    color: #e6e6e6;
+}
+
+/* Changes box shadow */
+#mode-toggle:checked + #mode-button {
+    box-shadow: inset 0rem .1rem .5rem rgb(36, 31, 98), inset 0rem -.1rem .5rem rgb(255, 255, 255, 0.4);
+
+}
+
+/* Changes button color*/
+#mode-toggle:checked + #mode-button:after {
+    background: rgb(36, 31, 98);
+}
+
+
+
+
+/* Right side */
+.develop-banner{
+    background: radial-gradient(circle at 100%, rgb(36, 31, 98) 3.6%, rgb(121, 45, 129)  90.4%);
+}
+
+/* Left Side */
+.develop-left-sidebar{
+    border: 5px solid rgb(121, 45, 129);
+}
+
+.develop-left-sidebar-header{
+    color: rgb(121, 45, 129);
+    border-bottom: .3rem solid rgb(121, 45, 129);
+}
+
+.develop-left-sidebar-name{
+    border-bottom: .2rem dotted rgb(121, 45, 129);
+}
+
+
+
+
