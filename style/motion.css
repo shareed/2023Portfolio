@@ -1,0 +1,76 @@
+/* #road {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-image: url('road.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+} */
+.main-section-right-banner {
+    width: 100%;
+    height: 50px;
+    background: radial-gradient(circle at 100%, rgb(121, 45, 129) 3.6%, rgb(36, 31, 98) 90.4%);
+    float: right;
+    color: rgb(225, 234, 238);
+    font-size: 4rem;
+} 
+
+.develop-banner{
+    background: radial-gradient(circle at 100%, rgb(36, 31, 98) 3.6%, rgb(121, 45, 129)  90.4%);
+
+}
+
+
+
+
+#think {
+    position: absolute;
+    text-align: center;
+    transform: translate(-1%, -50%);
+    width: 10rem;
+    height: 3rem;
+    top: .5%;
+    right: 1.2%;
+    /* background-color: red; */
+    border-radius: 10px;
+    animation: move 40s linear infinite;
+}
+
+#design {
+    position: absolute;
+    text-align: center;
+    transform: translate(-25%, -50%);
+    width: 10rem;
+    height: 3rem;
+    top: .5%;
+    right: 1.2%;
+    /* background-color: red; */
+    border-radius: 10px;
+    animation: move 40s 10s infinite;
+    /* animation-delay: .2s; */
+    animation: fadeIn 10s;
+}
+
+
+ 
+@keyframes move {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: 79%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

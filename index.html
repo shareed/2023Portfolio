@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 </head>
  
 <body>
-   <div class="container">
+    <div class="page-container">
 
-        <section class="left-sidebar">
-            <div class="left-sidebar-header">
+   <div class="content-container">
+
+        <section id="sidebar" class="left-sidebar">
+            <div id="sidebar-header" class="left-sidebar-header">
                 <img class="left-sidebar-headshot" src="./img/me.jpg" >
-                <h1 class="left-sidebar-name">Shannon Reed</h1>
+                <h1 id="sidebar-name" class="left-sidebar-name">Shannon Reed</h1>
                 <h2 class="left-sidebar-dev-special">Full Stack Web Developer</h2>
                 <div>
                     <input type="checkbox" id="designmode-toggle"/>
@@ -25,14 +29,25 @@
         </section>
 
 
-        <section class="main-section">
-            <h2>Hey, I'm Shannon.</h2>
-            <p>Full Stack Web Developer learning, building and teaching <br/>from San Diego, Califonia. I turn ideas into applications and websites</p>
-            <p>Come on in and take a look around, dont forget to connect with me while you are here!!!</p>
+        <section class="main-section-right">
+            <div id="banner" class = "main-section-right-banner">
+                <div id="think">Think</div>
+                <div id="design">Design</div>
+            </div>
+            <div class="main-section-right-cotent">
+                <!-- <h2>Think, Design, Create Repeat</h2>
+                <p>Full Stack Web Developer learning, building and teaching <br/>from Las Vegas, Nevada. I turn ideas into applications and websites</p>
+                <p>Come on in and take a look around, dont forget to connect with me while you are here!!!</p> -->
+            </div>
+            
+            
+         
+            
+        
         </section>
         
    </div>
-
+</div>
 
    <!-- <footer id="footer"></footer>
             <div>
@@ -50,9 +65,23 @@
  <script>
     function toggleModeFunction() {
         let bodyElement = document.body;
-        bodyElement.classList.toggle("develop");
+        bodyElement.classList.toggle("develop-body");
 
-        let paragraphElement = document.getElementById("mode-label")
+        let bannerElement = document.getElementById("banner");
+        // bannerElement.classList.remove("main-section-right-banner")
+        bannerElement.classList.toggle("develop-banner");
+        
+        let sidebarElement = document.getElementById("sidebar");
+        sidebarElement.classList.toggle("develop-left-sidebar");
+
+        let sidebarHeaderElement = document.getElementById("sidebar-header");
+        sidebarHeaderElement.classList.toggle("develop-left-sidebar-header");
+
+        let sidebarNameElement = document.getElementById("sidebar-name");
+        sidebarNameElement.classList.toggle("develop-left-sidebar-name");
+
+
+        let paragraphElement = document.getElementById("mode-label");
         if ( paragraphElement.textContent === "Design" ) {
             paragraphElement.textContent = "Develop";
             } else if ( paragraphElement.textContent === "Develop" ) {
@@ -61,5 +90,9 @@
 }
     }
 </script>
+
+<!-- Bootstrap & jQuery JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
