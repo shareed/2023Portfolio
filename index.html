@@ -6,71 +6,64 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-
+    <script src="https://kit.fontawesome.com/525fc14ecf.js" crossorigin="anonymous"></script>
 </head>
  
 <body>
     <div class="page-container">
-
-   <div class="content-container">
-
-        <section id="sidebar" class="left-sidebar">
-            <div id="sidebar-header" class="left-sidebar-header">
-                <img class="left-sidebar-headshot" src="./img/me.jpg" >
-                <h1 id="sidebar-name" class="left-sidebar-name">Shannon Reed</h1>
-                <h2 class="left-sidebar-dev-special">Full Stack Web Developer</h2>
-                <div>
-                    <input type="checkbox" id="mode-toggle"/>
-                    <label id="mode-button" onclick="toggleModeFunction()" for="mode-toggle">
-                        <img id="design-mode-svg" src="./img/design.svg"  class="design-mode-image">
-                        <img id="develop-mode-svg" src="./img/develop.svg" class="develop-mode-image">
-                    </label>
-                    <p id="mode-name">Design</p>
+        <div class="content-container">
+<!-- Left sidebar -->
+            <div id="sidebar" class="left-sidebar">
+                <div id="sidebar-header" class="left-sidebar-header">
+                    <img class="left-sidebar-headshot" src="./img/me.jpg" >
+                    <h1 id="sidebar-name" class="left-sidebar-name">Shannon Reed</h1>
+                    <h2 class="left-sidebar-dev-special">Full Stack Web Developer</h2>
+                    <div>
+                        <input type="checkbox" id="mode-toggle"/>
+                        <label id="mode-button" onclick="toggleModeFunction()" for="mode-toggle">
+                            <img id="design-mode-svg" src="./img/design.svg" class="design-mode-image">
+                            <img id="develop-mode-svg" src="./img/develop.svg" class="develop-mode-image">
+                        </label>
+                        <p id="mode-name">Design</p>
+                    </div>
+                </div>
+                <div id="sidebar-nav" class="left-sidebar-nav">
+                    <nav class="left-sidebar-nav-container">
+                        <a class="nav-item"><i class="fa-solid fa-house nav-icon-item"></i> &nbsp;Home</a>
+                        <a class="nav-item"><i class="fa-solid fa-diagram-project nav-icon-item"></i>&nbsp;Projects</a>
+                        <a class="nav-item"><i class="fa-solid fa-screwdriver-wrench nav-icon-item"></i>&nbsp;Skills</a>
+                        <a class="nav-item"><i class="fa-solid fa-id-card nav-icon-item"></i>&nbsp;Contact</a>
+                        <a class="nav-item"><i class="fa-solid fa-circle-info nav-icon-item"></i>&nbsp;About</a>
+                        <a class="nav-item"><i class="fa-solid fa-file nav-icon-item"></i>&nbsp;Resume</a>
+                    </nav>
                 </div>
             </div>
-            
-        </section>
 
-
-        <section class="main-section-right">
-            <div id="banner" class = "main-section-right-banner">
-                <div class="banner-text">
-                    <div id="think">Think</div>
-                    <div id="design">Design</div>
-                    <div id="create">Create</div>
-                    <div id="repeat">Repeat</div>
+<!-- Right side main content -->
+            <div class="main-section-right">
+                <div id="banner" class ="main-section-right-banner">
+                    <div class="banner-text">
+                        <div id="think">Think</div>
+                        <div id="design">Design</div>
+                        <div id="create">Create</div>
+                        <div id="repeat">Repeat</div>
+                    </div>
                 </div>
-                
+                <div class="main-section-right-content">
+                    <!-- <h2>Think, Design, Create Repeat</h2>
+                    <p>Full Stack Web Developer learning, building and teaching <br/>from Las Vegas, Nevada. I turn ideas into applications and websites</p>
+                    <p>Come on in and take a look around, dont forget to connect with me while you are here!!!</p> -->
+                </div>
             </div>
-            <div class="main-section-right-cotent">
-                <!-- <h2>Think, Design, Create Repeat</h2>
-                <p>Full Stack Web Developer learning, building and teaching <br/>from Las Vegas, Nevada. I turn ideas into applications and websites</p>
-                <p>Come on in and take a look around, dont forget to connect with me while you are here!!!</p> -->
-            </div>
-            
-            
-         
-            
-        
-        </section>
-        
-   </div>
-</div>
-
+        </div>
+    </div>
    <!-- <footer id="footer"></footer>
             <div>
                 <input type="checkbox" id="designmode-toggle"/>
                 <label onclick="toggleModeFunction()" for="designmode-toggle"></label>
-
             </div>
  -->
-
-
-
-
-
-    
- <script src="./jsfiles/mode.js"></script>
+<script src="./jsfiles/mode.js"></script>
 
 <!-- Bootstrap & jQuery JS -->
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

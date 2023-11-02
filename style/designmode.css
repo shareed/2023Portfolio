@@ -1,6 +1,6 @@
 body {
-    overflow-x: hidden; 
-    background-color: #d3dcd2;
+    /* overflow-x: hidden; to remove bottom scroll bar  */ 
+    background-color: #C6FCEC;
 }
 
 /* Container for button */
@@ -20,7 +20,7 @@ body {
 /* Right side */
 .main-section-right-banner {
     background: radial-gradient(circle at 100%, rgb(121, 45, 129) 3.6%, rgb(36, 31, 98) 90.4%);
-
+    color: #C6FCEC;
 }
 
 /* Left Side */
