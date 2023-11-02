@@ -1,7 +1,13 @@
 .left-sidebar {
     width: 15%;
     height: 100%;
-    border: 5px solid black;
+    border: .1rem solid #ffffff;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    /* border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem; */
+    border-radius: 10rem;
 }
 
 /* TOP HEADER*/
@@ -12,12 +18,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: black;
-    border-bottom: .3rem solid black;
+    color: #ffffff;
+    border-bottom: .1rem solid #ffffff;
 }
 
 .left-sidebar-name {
-    border-bottom: .2rem dotted black;
+    border-bottom: .2rem dotted #ffffff;
     font-size: 2.5rem;
     text-align: center;
     padding-bottom: .5rem;
@@ -39,11 +45,11 @@
 
 /* BOTTOM NAVIGATION */
 .left-sidebar-nav-container{
-    border: 5px solid red;
     width: 100%;
     height: 35vh;
     display: flex;
     flex-direction: column;
+    color: #ffffff;
 }
 
 .nav-item{

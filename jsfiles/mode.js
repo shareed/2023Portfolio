@@ -35,3 +35,8 @@ function toggleModeFunction() {
             paragraphElement.textContent = "Design";
         }
 }
+
+
+
+
+
