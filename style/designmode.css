@@ -8,14 +8,19 @@ body {
     box-shadow: inset 0rem .1rem .5rem rgb(121, 45, 129), inset 0rem -.1rem .5rem rgb(255, 255, 255, 0.4);
 }
 
+/* change button */
 #mode-button:after {
     background: rgb(121, 45, 129);
+}
+
+#mode-button .design-mode-off {
+    filter: invert(0); /*icon black */
 }
 
 /* Right side */
 .main-section-right-banner {
     background: radial-gradient(circle at 100%, rgb(121, 45, 129) 3.6%, rgb(36, 31, 98) 90.4%);
-    color: #d3dcd2;
+
 }
 
 /* Left Side */

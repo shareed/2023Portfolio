@@ -19,6 +19,14 @@ function toggleModeFunction() {
     let sidebarNameElement = document.getElementById("sidebar-name");
     sidebarNameElement.classList.toggle("develop-left-sidebar-name");
 
+    //Change color for svg design icon
+    let svgDesignIcon = document.getElementById("design-mode-svg")
+    svgDesignIcon.classList.toggle("design-mode-off")
+
+    //Change color for svg design icon
+    let svgDevelopIcon = document.getElementById("develop-mode-svg")
+    svgDevelopIcon.classList.toggle("develop-mode-on")
+
     //Change label for mode
     let paragraphElement = document.getElementById("mode-name");
     if ( paragraphElement.textContent === "Design" ) {
